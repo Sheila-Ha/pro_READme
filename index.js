@@ -9,38 +9,38 @@ const inquirer = require('inquirer');
 inquirer
   .prompt([
     {
-      name: 'Title',
-      content: 'What is the name of your project?',
+      name: 'title',
+      message: 'What is the name of your project?',
     },
     {
-      name: '<Your motivation',
-      content: 'What was your motivation?',
+      name: 'your motivation',
+      message: 'What was your motivation?',
     },
     {
-      name: 'Why',
-      content: 'Why did you build this project?',
+      name: 'why',
+      message: 'Why did you build this project?',
     },
     {
-      name: 'Problem Solve',
-      content: 'What problem does it solve?',
+      name: 'problem solve',
+      message: 'What problem does it solve?',
     },
     {
-      name: 'Learned',
-      content: 'What did you learn?',
+      name: 'learned',
+      message: 'What did you learn?',
     },
     {
-      name: 'Shine',
-      content: 'What makes your project stand out?',
+      name: 'shine',
+      message: 'What makes your project stand out?',
     },
     {
-      type: 'Checkbox',
-      name: 'Contents',
+      type: 'checkbox',
+      name: 'contents',
       choices: ['yes', 'no'],
       message: 'Would you like to include a Table of Contents?',
     },
     {
-      type: 'Checkbox',
-      name: 'Contents',
+      type: 'checkbox',
+      name: 'table of content',
       choices: ['Installation', 'Usage', 'Credits', 'License', 'Badges', 'Features', 'How to Contribute', 'Tests'],
       message: 'Which ones would you like to add?',
     },
