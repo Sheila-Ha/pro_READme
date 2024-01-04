@@ -48,7 +48,7 @@ inquirer
   ])
     .then((responses) => {
       console.log('responses :>> ', responses);
-      const filename = `${responses.name.toLowerCase()}json`;
+      const filename = `${responses.title.toLowerCase()}json`;
 
       fs.writeFile(filename, JSON.stringify(responses, null, 4), (err) =>
       err ? console.error(err) : console.log('Success')
