@@ -5,12 +5,31 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
+{
+  name: 'Title',
+  content: 'What is the name of your project?',
+},
+{
+  name: '<Motivation',
+  content: 'What was your motivation?',
+},
+{
+  name: 'Why'
+  content: 'Why did you build this project?',
+},
+{
+  name: 'Problem Solve',
+  content: 'What problem does it solve?',
+},
+{
+  name: 'Learned',
+  content: 'What did you learn?',
+},
+{
+  name: 'shine',
+  content: 'What makes your project stand out?',
+},
 
-  What was your motivation?
-  Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-  What problem does it solve?
-  What did you learn?
-  What makes your project stand out?
   Table of Contents 
 
   [Installation](#installation)
