@@ -9,8 +9,9 @@ const inquirer = require('inquirer');
 inquirer
   .prompt([
     {
+      type: 'input',
       name: 'title',
-      message: 'What is the name of your project?',
+      message: 'What is the title of your project?',
     },
     {
       name: 'your motivation',
@@ -49,7 +50,7 @@ inquirer
       console.log('responses :>> ', responses);
       const filename = `${responses.name.toLowerCase()}json`;
 
-      fs.writeFile(filename, JSON.stringify(responses, null, 2), (err) =>
+      fs.writeFile(filename, JSON.stringify(responses, null, 4), (err) =>
       err ? console.error(err) : console.log('Success')
       );
     })
