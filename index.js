@@ -2,10 +2,10 @@
 
 const fs = require('fs');
 const inquirer = require('inquirer');
-// const generateMarkdown = require('./utils/generateMarkdown');
+
 
 // TODO: Create an array of questions for user input
-// const questions = [
+
 inquirer
   .prompt([
     {
@@ -13,7 +13,7 @@ inquirer
       content: 'What is the name of your project?',
     },
     {
-      name: '<Motivation',
+      name: '<Your motivation',
       content: 'What was your motivation?',
     },
     {
