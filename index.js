@@ -14,7 +14,7 @@ const questions = [
   content: 'What was your motivation?',
 },
 {
-  name: 'Why'
+  name: 'Why',
   content: 'Why did you build this project?',
 },
 {
@@ -26,10 +26,21 @@ const questions = [
   content: 'What did you learn?',
 },
 {
-  name: 'shine',
+  name: 'Shine',
   content: 'What makes your project stand out?',
 },
+{
+  name: 'Contents',
+  type: 'checkbox',
+  message: 'Would you like to include a Table of Contents?'
+},
+{
+  type: 'Checkbox',
+  name: 'Contents',
+  choices: ['Installation', 'Usage', 'Credits', 'License'],
+  message: 'Which ones would you like to add?'
 
+}
   Table of Contents 
 
   [Installation](#installation)
@@ -49,5 +60,5 @@ function writeToFile(fileName, data) {}
 // TODO: Create a function to initialize app
 function init() {}
 
-// Function call to initialize app
+// Function call to initialize app 
 init();
