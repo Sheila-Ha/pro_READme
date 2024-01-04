@@ -30,27 +30,18 @@ const questions = [
   content: 'What makes your project stand out?',
 },
 {
-  name: 'Contents',
   type: 'checkbox',
-  message: 'Would you like to include a Table of Contents?'
+  name: 'Contents',
+  message: 'Would you like to include a Table of Contents?',
+  choices: ['yes', 'no'],
 },
 {
   type: 'Checkbox',
   name: 'Contents',
-  choices: ['Installation', 'Usage', 'Credits', 'License'],
-  message: 'Which ones would you like to add?'
+  message: 'Which ones would you like to add?',
+  choices: ['Installation', 'Usage', 'Credits', 'License', 'Badges', 'Features', 'How to Contribute', 'Tests'],
+},
 
-}
-  Table of Contents 
-
-  [Installation](#installation)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - [License](#license)
-  ## Badges
-  ## Features
-  How to Contribute
-  ## Tests
 
 ];
 
