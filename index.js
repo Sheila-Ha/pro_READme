@@ -48,7 +48,7 @@ inquirer
     {
       name: 'user story',
       message: 'What is your User Story?',
-    }
+    },
     {
       name: 'acceptance criteria',
       message: "What is your Acceptance Criteria?",
@@ -64,7 +64,15 @@ inquirer
     })
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  console.log(filename);
+  console.log(data);
+
+fs.appendFile(filename, function(err) {
+  
+})
+}
+
 
 // TODO: Create a function to initialize app
 function init() {}
