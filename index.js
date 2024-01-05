@@ -68,11 +68,43 @@ function writeToFile(fileName, data) {
   console.log(filename);
   console.log(data);
 
-fs.appendFile(filename, function(err) {
-  
-})
+  //verify if a readme has been made 
+  //new file = write file
+  //append to exit file
+  fs.appendFile(filename, function(err) {
+    if (err) {
+      console.error(err);
+    }
+      console.log("Success, Your README.md file has been generated")
+  });
 }
 
 
+
+
 // TODO: Create a function to initialize app
-function init() {}
+async function init() {
+  try {
+    // prompt inquirer questions
+    const userResponses = await inquirer.prompt(questions);
+    console.log("Your responses: ", userResponses);
+    console.log("Thank you for your time");
+
+    //requests github api for user info
+    const userInfo = await appendFile.getUser(userResponses);
+    console.log("Github user info: ", userInfo);
+
+    //send inquirer userResponses and github userInfo to generateMarkdown
+    console.log("Genereate your README")
+    const markdown = generateMarkdown(userResponses, userInfo);
+    console.log(markdown);
+
+    //wire markdown to file
+    await writerFileAsync('ExampleREADME.md', markdown);
+
+  } catch (error) {
+      console.log(error);
+  }
+};
+
+init();
