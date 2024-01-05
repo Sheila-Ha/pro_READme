@@ -45,6 +45,14 @@ inquirer
       choices: ['Installation', 'Usage', 'Credits', 'License', 'Badges', 'Features', 'How to Contribute', 'Tests'],
       message: 'Which ones would you like to add?',
     },
+    {
+      name: 'user story',
+      message: 'What is your User Story?',
+    }
+    {
+      name: 'acceptance criteria',
+      message: "What is your Acceptance Criteria?",
+    }
   ])
     .then((responses) => {
       console.log('responses :>> ', responses);
