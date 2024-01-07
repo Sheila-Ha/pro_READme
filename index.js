@@ -11,12 +11,12 @@ const questions = [
     name: "title",
     message: "What is the title of your project?"
   },
-  // {
-  //   type: "input", //used for single line response
-  //   name: "link",
-  //   message: "Add URL for your project."
-  // },
-  // {
+  {
+    type: "input", //used for single line response
+    name: "link",
+    message: "Add URL for your project."
+  },
+  {
   //   type: "editor", //used for multi line responses, saved in notepad
   //   name: "description",
   //   message: "Describe you project, the purpose and how it functions."
@@ -40,28 +40,28 @@ const questions = [
   //   type: "editor",
   //   name: "Contributing",
   //   message: "What are contributing sources?",
-  // },
-  // {
-  //   type: "rawlist", //select 1 from choices
-  //   name: "license",
-  //   message: "Select a license for your project",
-  //   choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD3", "GNU3", "none"],
-  // },
-  // {
-  //   type: "editor",
-  //   name: "badges",
-  //   message: "What badges apply?",
-  // },
-  // {
-  //   type: "editor",
-  //   name: "test",
-  //   message: "Add test instructions.",
-  // },
-  // { 
-  //   type: 'input',
-  //   name: 'email',
-  //   message: 'Add your email address',
-  // },
+  },
+  {
+    type: "rawlist", //select 1 from choices
+    name: "license",
+    message: "Select a license for your project",
+    choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD3", "GNU3", "none"],
+  },
+  {
+    type: "editor",
+    name: "badges",
+    message: "What badges apply?",
+  },
+  {
+    // type: "editor",
+    // name: "test",
+    // message: "Add test instructions.",
+  },
+  { 
+    type: 'input',
+    name: 'email',
+    message: 'Add your email address',
+  },
  
 ];
 

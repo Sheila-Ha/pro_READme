@@ -64,6 +64,9 @@ by ${data.name} ${renderLicenseBadge(data.license)}
 
   ## Tests
   ${data.test}
+
+  ## Email
+  ${data.email}
   
 `;
 }
