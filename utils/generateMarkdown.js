@@ -43,7 +43,7 @@ by ${data.name} ${renderLicenseBadge(data.license)}
   * [License](#license)
   * [Badges](#badges)
   * [Tests](#tests)
-  * [Contact Me](#contact me)
+  * [Contact](#contact)
     
   ## Installation 
   ${data.install}
@@ -67,8 +67,8 @@ by ${data.name} ${renderLicenseBadge(data.license)}
   ${data.test}
 
   ## Contact Me
-  ### My name
-  ${data.my name}
+  ### Author
+  ${data.author}
   ### Github
   ${data.github}
   ### Email
