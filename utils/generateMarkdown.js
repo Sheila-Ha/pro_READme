@@ -38,6 +38,9 @@ by ${data.name} ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
   * [Installation](#installation)
+  * [User_Story](#user story)
+  * [Acceptance_Criteria](#acceptance criteria)
+  * [Wireframe](#wireframe_vision)
   * [Usage](#usage)
   * [Features](#features)
   * [Contributing](#contributing)

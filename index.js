@@ -5,36 +5,51 @@ const generateMarkdown = require("./utils/generateMarkdown"); //require is built
 
 // TODO: Create an array of questions for user input
 const questions = [ 
-      // {
-      //   type: "input", // used for single line responses
-      //   name: "title", //name of configuration
-      //   message: "What is the title of your project?" //question prompt in console.log
-      // },
+  //     {
+  //       type: "input", // used for single line responses
+  //       name: "title", //name of configuration
+  //       message: "What is the title of your project?" //question prompt in console.log
+  //     },
   // {
   //   type: "editor", //used for multi line responses, saved in notepad
   //   name: "description",
   //   message: "Describe your project, the purpose and how it functions."
   // },
-  // {
-      //   type: "editor",
-      //   name: "install",
-      //   message: "Add installation instructions",
-      // },
-      // {
-      //   type: "editor",
-      //   name: "usage",
-      //   message: "How do you use your application?",
-      // },
-      // {
-      //   type: "editor",
-      //   name: "features",
-      //   message: "What does your project feature?",
-      // },
-  // {
-  //   type: "editor",
-  //   name: "contributing",
-  //   message: "What are contributing sources?",
-  // },
+  {
+        type: "editor",
+        name: "installation",
+        message: "Add installation instructions",
+      },
+        {
+          type: "editor",
+          name: "user story",
+          message: "Add your user story",
+        },
+        {
+          type: "editor",
+          name: "acceptance criteria",
+          message: "Add your user story",
+        },
+        {
+          type: "editor",
+          name: "wireframe"
+          message: "Add your wireframe link"
+        }
+      {
+        type: "editor",
+        name: "usage",
+        message: "How do you use your application?",
+      },
+      {
+        type: "editor",
+        name: "features",
+        message: "What does your project feature?",
+      },
+  {
+    type: "editor",
+    name: "contributing",
+    message: "What are contributing sources?",
+  },
   // {
   //   type: "rawlist", //select 1 from choices
   //   name: "license",
@@ -51,21 +66,21 @@ const questions = [
   //   name: "test",
   //   message: "Add test instructions",
   // },
-  {
-    type: 'index',
-    name: 'questions',
-    message: 'Type your question',
-  },
-    { 
-      type: 'index',
-      name: 'github',
-      message: 'Enter your github profile',
-    },
-    {
-      type: 'index',
-      name: 'email',
-      message: 'Enter your email address',
-    }
+  // {
+  //   type: 'index',
+  //   name: 'questions',
+  //   message: 'Type your question',
+  // },
+  //   { 
+  //     type: 'index',
+  //     name: 'github',
+  //     message: 'Enter your github profile',
+  //   },
+  //   {
+  //     type: 'index',
+  //     name: 'email',
+  //     message: 'Enter your email address',
+  //   }
  
 ];
 
