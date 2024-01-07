@@ -30,44 +30,40 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-by ${data.name}
-${renderLicenseBadge(data.license)}
-  const generateMarkdown = data => {
-    ![Github licence](http://img.shields.io/badge/license-${data.license}-blue.svg)
-  
+by ${data.name} ${renderLicenseBadge(data.license)}
+
+  ## Description 
+  ${data.description}
+
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Features](#features)
+  * [Contributing](#contributing)
+  * [License](#license)
+  * [Badges](#badges)
+  * [Tests](#tests)
     
-    ## Description 
-    ${data.description}
-
-    ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Features](#features)
-    * [Contributing](#contributing)
-    * [License](#license)
-    * [Badges](#badges)
-    * [Tests](#tests)
-    
-    ## Installation 
-    ${data.install}
+  ## Installation 
+  ${data.install}
   
-    ## Usage 
-    ${data.usage}
+  ## Usage 
+  ${data.usage}
   
-    ## Features
-    ${data.features}
+  ## Features
+  ${data.features}
 
-    ## Contributing
-    ${data.contributing}
+  ## Contributing
+  ${data.contributing}
 
-    ## License 
-    This project is license under ${data.license}
+  ## License 
+  This project is license under ${data.license}
 
-    ## Badges
-    ${data.badges}
-  
-    ## Tests
-    ${data.test}
+  ## Badges
+  ${data.badges}
+
+  ## Tests
+  ${data.test}
   
 `;
 }
