@@ -44,6 +44,7 @@ by ${data.name} ${renderLicenseBadge(data.license)}
   * [License](#license)
   * [Badges](#badges)
   * [Tests](#tests)
+  * [Questions](#questions)
   * [Contact](#contact)
     
   ## Installation 
@@ -66,6 +67,9 @@ by ${data.name} ${renderLicenseBadge(data.license)}
 
   ## Tests
   ${data.test}
+
+  ## Questions
+  ${data.questions}
 
   ## Contact
   ### Author

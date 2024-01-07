@@ -1,25 +1,24 @@
 // TODO: Include packages needed for this application
-const inquirer = require("inquirer");
-const fs = require("fs");
-// const path = require("path");
-const generateMarkdown = require("./utils/generateMarkdown");
+const inquirer = require("inquirer"); //const variable can not be reassigned
+const fs = require("fs"); //const file system (fs) to read files on my pc
+const generateMarkdown = require("./utils/generateMarkdown"); //require is built in function, passing location name as argument
 
 // TODO: Create an array of questions for user input
-const questions = [
+const questions = [ 
   {
-    type: "input",
-    name: "title",
-    message: "What is the title of your project?"
+    type: "input", // used for single line responses
+    name: "title", //name of configuration
+    message: "What is the title of your project?" //question prompt in console.log
   },
   {
     type: "editor", //used for multi line responses, saved in notepad
     name: "description",
-    message: "Describe you project, the purpose and how it functions."
+    message: "Describe your project, the purpose and how it functions."
   },
   {
     type: "editor",
     name: "install",
-    message: "Add installation instructions.",
+    message: "Add installation instructions",
   },
   {
     type: "editor",
@@ -50,7 +49,7 @@ const questions = [
   {
     type: "editor",
     name: "test",
-    message: "Add test instructions.",
+    message: "Add test instructions",
   },
   { 
     type: 'input',
@@ -63,6 +62,11 @@ const questions = [
     message: 'add your github address',
   },
   {
+    type: 'editor',
+    name: 'questions',
+    message: 'add your questions',
+  },
+  {
     type: 'input',
     name: 'email',
     message: 'add your email address'
@@ -71,16 +75,16 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  fs.writeFileSync(fileName, data);
+function writeToFile(fileName, data) { // function
+  fs.writeFileSync(fileName, data); // write file (synchronous version)
 }
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer.prompt(questions).then((responses) => {
+  inquirer.prompt(questions).then((responses) => { //ask questions, then proceed with responses
     //console.log(responses);
     //console.log(responses.description);
-    writeToFile("dist/README.md", generateMarkdown(responses));
+    writeToFile("dist/README.md", generateMarkdown(responses)); //write a new readme file from responses using generateMarkdown
     //console.log("Creating your Professional README.md File...");
   }).catch((err) => {
     //console.log(err);
