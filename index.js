@@ -18,7 +18,7 @@ const questions = [
   },
   {
     type: "editor",
-    name: "installation",
+    name: "install",
     message: "Add installation instructions.",
   },
   {
@@ -33,7 +33,7 @@ const questions = [
   },
   {
     type: "editor",
-    name: "Contributing",
+    name: "contributing",
     message: "What are contributing sources?",
   },
   {
