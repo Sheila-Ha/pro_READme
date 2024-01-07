@@ -32,9 +32,9 @@ const questions = [
         },
         {
           type: "editor",
-          name: "wireframe"
-          message: "Add your wireframe link"
-        }
+          name: "wireframe",
+          message: "Add your wireframe link",
+        },
       {
         type: "editor",
         name: "usage",
