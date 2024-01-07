@@ -61,7 +61,7 @@ const questions = [
     type: 'input',
     name: 'github',
     message: 'add your github address',
-  }
+  },
   {
     type: 'input',
     name: 'email',
