@@ -5,72 +5,67 @@ const generateMarkdown = require("./utils/generateMarkdown"); //require is built
 
 // TODO: Create an array of questions for user input
 const questions = [ 
+      // {
+      //   type: "input", // used for single line responses
+      //   name: "title", //name of configuration
+      //   message: "What is the title of your project?" //question prompt in console.log
+      // },
+  // {
+  //   type: "editor", //used for multi line responses, saved in notepad
+  //   name: "description",
+  //   message: "Describe your project, the purpose and how it functions."
+  // },
+  // {
+      //   type: "editor",
+      //   name: "install",
+      //   message: "Add installation instructions",
+      // },
+      // {
+      //   type: "editor",
+      //   name: "usage",
+      //   message: "How do you use your application?",
+      // },
+      // {
+      //   type: "editor",
+      //   name: "features",
+      //   message: "What does your project feature?",
+      // },
+  // {
+  //   type: "editor",
+  //   name: "contributing",
+  //   message: "What are contributing sources?",
+  // },
+  // {
+  //   type: "rawlist", //select 1 from choices
+  //   name: "license",
+  //   message: "Select a license for your project",
+  //   choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD3", "GNU3", "none"],
+  // },
+  // {
+  //   type: "editor",
+  //   name: "badges",
+  //   message: "What badges apply?",
+  // },
+  // {
+  //   type: "editor",
+  //   name: "test",
+  //   message: "Add test instructions",
+  // },
   {
-    type: "input", // used for single line responses
-    name: "title", //name of configuration
-    message: "What is the title of your project?" //question prompt in console.log
-  },
-  {
-    type: "editor", //used for multi line responses, saved in notepad
-    name: "description",
-    message: "Describe your project, the purpose and how it functions."
-  },
-  {
-    type: "editor",
-    name: "install",
-    message: "Add installation instructions",
-  },
-  {
-    type: "editor",
-    name: "usage",
-    message: "How do you use your application?",
-  },
-  {
-    type: "editor",
-    name: "features",
-    message: "What does your project feature?",
-  },
-  {
-    type: "editor",
-    name: "contributing",
-    message: "What are contributing sources?",
-  },
-  {
-    type: "rawlist", //select 1 from choices
-    name: "license",
-    message: "Select a license for your project",
-    choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD3", "GNU3", "none"],
-  },
-  {
-    type: "editor",
-    name: "badges",
-    message: "What badges apply?",
-  },
-  {
-    type: "editor",
-    name: "test",
-    message: "Add test instructions",
-  },
-  { 
-    type: 'input',
-    name: 'author',
-    message: 'Add your name',
-  },
-  {
-    type: 'input',
-    name: 'github',
-    message: 'add your github address',
-  },
-  {
-    type: 'editor',
+    type: 'index',
     name: 'questions',
-    message: 'add your questions',
+    message: 'Type your question',
   },
-  {
-    type: 'input',
-    name: 'email',
-    message: 'add your email address'
-  }
+    { 
+      type: 'index',
+      name: 'github',
+      message: 'Enter your github profile',
+    },
+    {
+      type: 'index',
+      name: 'email',
+      message: 'Enter your email address',
+    }
  
 ];
 

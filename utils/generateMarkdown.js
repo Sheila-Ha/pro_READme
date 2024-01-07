@@ -45,8 +45,7 @@ by ${data.name} ${renderLicenseBadge(data.license)}
   * [Badges](#badges)
   * [Tests](#tests)
   * [Questions](#questions)
-  * [Contact](#contact)
-    
+     
   ## Installation 
   ${data.install}
   
@@ -69,15 +68,14 @@ by ${data.name} ${renderLicenseBadge(data.license)}
   ${data.test}
 
   ## Questions
-  ${data.questions}
+  ${data.questions},
 
-  ## Contact
-  ### Author
-  ${data.author}
-  ### Github
-  ${data.github}
-  ### Email
-  ${data.email}
+  * Github -
+    ${data.github},
+
+  * Email -
+    ${data.email}
+
 `;
 }
 // use for importing Markdown in index
