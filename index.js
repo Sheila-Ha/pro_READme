@@ -17,29 +17,29 @@ const questions = [
     message: "Add URL for your project."
   },
   {
-  //   type: "editor", //used for multi line responses, saved in notepad
-  //   name: "description",
-  //   message: "Describe you project, the purpose and how it functions."
-  // },
-  // {
-  //   type: "editor",
-  //   name: "installation",
-  //   message: "Add installation instructions.",
-  // },
-  // {
-  //   type: "editor",
-  //   name: "usage",
-  //   message: "How do you use your application?",
-  // },
-  // {
-  //   type: "editor",
-  //   name: "features",
-  //   message: "What does your project feature?",
-  // },
-  // {
-  //   type: "editor",
-  //   name: "Contributing",
-  //   message: "What are contributing sources?",
+    type: "editor", //used for multi line responses, saved in notepad
+    name: "description",
+    message: "Describe you project, the purpose and how it functions."
+  },
+  {
+    type: "editor",
+    name: "installation",
+    message: "Add installation instructions.",
+  },
+  {
+    type: "editor",
+    name: "usage",
+    message: "How do you use your application?",
+  },
+  {
+    type: "editor",
+    name: "features",
+    message: "What does your project feature?",
+  },
+  {
+    type: "editor",
+    name: "Contributing",
+    message: "What are contributing sources?",
   },
   {
     type: "rawlist", //select 1 from choices
@@ -53,9 +53,9 @@ const questions = [
     message: "What badges apply?",
   },
   {
-    // type: "editor",
-    // name: "test",
-    // message: "Add test instructions.",
+    type: "editor",
+    name: "test",
+    message: "Add test instructions.",
   },
   { 
     type: 'input',
