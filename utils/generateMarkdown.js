@@ -67,12 +67,12 @@ by ${data.name} ${renderLicenseBadge(data.license)}
   ${data.test}
 
   ## Contact Me
-    ### Name
-    ${data.name}
-    ### Github
-    ${data.github}
-    ### Email
-    ${data.email}
+  ### My name
+  ${data.my name}
+  ### Github
+  ${data.github}
+  ### Email
+  ${data.email}
 `;
 }
 // use for importing Markdown in index
