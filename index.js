@@ -12,11 +12,6 @@ const questions = [
     message: "What is the title of your project?"
   },
   {
-    type: "input", //used for single line response
-    name: "link",
-    message: "Add URL for your project."
-  },
-  {
     type: "editor", //used for multi line responses, saved in notepad
     name: "description",
     message: "Describe you project, the purpose and how it functions."
@@ -59,13 +54,18 @@ const questions = [
   },
   { 
     type: 'input',
-    name: 'name',
+    name: 'author',
     message: 'Add your name',
   },
   {
     type: 'input',
     name: 'github',
-    message: 'add your email address',
+    message: 'add your github address',
+  }
+  {
+    type: 'input',
+    name: 'email',
+    message: 'add your email address'
   }
  
 ];
