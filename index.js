@@ -10,16 +10,15 @@ const questions = [
     name: "title", //name of configuration
     message: "What is the title of your project?" //question prompt in console.log
   },
-  {
-    type: "input",
-    name: "Name",
-    message: "Author name",
-  },
-  {
-    type: "editor", //used for multi line responses, saved in notepad
-    name: "description",
-    message: "Describe your project, the purpose and how it functions."
-  },
+  //   type: "input",
+  //   name: "Name",
+  //   message: "Author name",
+  // },
+  // {
+  //   type: "editor", //used for multi line responses, saved in notepad
+  //   name: "description",
+  //   message: "Describe your project, the purpose and how it functions."
+  // },
   {
     type: "editor",
     name: "installation",
@@ -40,37 +39,37 @@ const questions = [
     name: "wireframe",
     message: "Add your wireframe link",
   },
-  {
-    type: "editor",
-    name: "usage",
-    message: "How do you use your application?",
-  },
-  {
-    type: "editor",
-    name: "features",
-    message: "What does your project feature?",
-  },
-  {
-    type: "editor",
-    name: "contributing",
-    message: "What are contributing sources?",
-  },
-  {
-    type: "rawlist", //select 1 from choices
-    name: "license",
-    message: "Select a license for your project",
-    choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD3", "GNU3", "none"],
-  },
-  {
-    type: "editor",
-    name: "badges",
-    message: "What badges apply?",
-  },
-  {
-    type: "editor",
-    name: "test",
-    message: "Add test instructions",
-  },
+  // {
+  //   type: "editor",
+  //   name: "usage",
+  //   message: "How do you use your application?",
+  // },
+  // {
+  //   type: "editor",
+  //   name: "features",
+  //   message: "What does your project feature?",
+  // },
+  // {
+  //   type: "editor",
+  //   name: "contributing",
+  //   message: "What are contributing sources?",
+  // },
+  // {
+  //   type: "rawlist", //select 1 from choices
+  //   name: "license",
+  //   message: "Select a license for your project",
+  //   choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD3", "GNU3", "none"],
+  // },
+  // {
+  //   type: "editor",
+  //   name: "badges",
+  //   message: "What badges apply?",
+  // },
+  // {
+  //   type: "editor",
+  //   name: "test",
+  //   message: "Add test instructions",
+  // },
   {
     type: "index",
     name: "questions", 

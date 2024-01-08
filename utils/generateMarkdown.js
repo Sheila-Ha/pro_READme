@@ -20,7 +20,7 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (License !== "none") {
+  if (license !== "none") {
     return `## License
 
       Licensed under the ${license} license.`;
@@ -30,66 +30,68 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  try {
+    return `# ${data.title}
 by ${data.name} ${renderLicenseBadge(data.license)}
 
-  ## Description 
-  ${data.description}
+## Description 
+${data.description}
 
-  ## Table of Contents
-  * [Installation](#installation)
-    *[User Story](#userStory)
-    *[Acceptance Criteria](#acceptanceCriteria)
-    *[Wireframe](#wireframe)
-  * [Usage](#usage)
-  * [Features](#features)
-  * [Contributing](#contributing)
-  * [License](#license)
-  * [Badges](#badges)
-  * [Tests](#tests)
-  * [Questions](#questions)
-     
-  ## Installation 
-  ${data.installation}
+## Table of Contents
+* [Installation](#installation)
+  * [User Story](#user-story)
+  * [Acceptance Criteria](#acceptance-criteria)
+  * [Wireframe](#wireframe)
+* [Usage](#usage)
+* [Features](#features)
+* [Contributing](#contributing)
+* [License](#license)
+* [Badges](#badges)
+* [Tests](#tests)
+* [Questions](#questions)
+    
+## Installation 
+${data.installation}
 
-  * User Story -
-    ${data.userStory}
+* User Story
+  ${data.userStory}
 
-  * Acceptance Criteria -
-    ${data.acceptanceCriteria}
+* Acceptance Criteria
+  ${data.acceptanceCriteria}
 
-  * Wireframe -
-    ${data.wireframe}
+* Wireframe
+  ${data.wireframe}
 
-  ## Usage 
-  ${data.usage}
-  
-  ## Features
-  ${data.features}
+## Usage 
+${data.usage}
 
-  ## Contributing
-  ${data.contributing}
+## Features
+${data.features}
 
-  ## License 
-  This project is license under ${data.license}
+## Contributing
+${data.contributing}
 
-  ## Badges
-  ${data.badges}
+## License 
+This project is licensed under ${data.license}
 
-  ## Tests
-  ${data.test}
+## Badges
+${data.badges}
 
-  ## Questions
-  <img src="${userInfo.avatar_url}" alt="${userInfo.login}" width="40%" />
-  ${data.questions}
+## Tests
+${data.test}
 
-  * Github -
-    ${data.github}
+## Questions
+${data.questions}
 
-  * Email -
-    ${data.email}
+* Github -
+  ${data.github}
 
-`;
+* Email -
+  ${data.email}
+`;    
+  } catch (error) {
+    console.log(error);
+  }
 }
 // use for importing Markdown in index
 
