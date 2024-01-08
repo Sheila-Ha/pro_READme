@@ -22,34 +22,34 @@ const questions = [
       },
         {
           type: "editor",
-          name: "user story",
+          name: "userStory",
           message: "Add your user story",
         },
         {
           type: "editor",
-          name: "acceptance criteria",
-          message: "Add your user story",
+          name: "acceptanceCriteria",
+          message: "Add your acceptance criteria",
         },
         {
-          type: "editor",
+          type: "index",
           name: "wireframe",
           message: "Add your wireframe link",
         },
-      {
-        type: "editor",
-        name: "usage",
-        message: "How do you use your application?",
-      },
-      {
-        type: "editor",
-        name: "features",
-        message: "What does your project feature?",
-      },
-  {
-    type: "editor",
-    name: "contributing",
-    message: "What are contributing sources?",
-  },
+      // {
+      //   type: "editor",
+      //   name: "usage",
+      //   message: "How do you use your application?",
+      // },
+      // {
+      //   type: "editor",
+      //   name: "features",
+      //   message: "What does your project feature?",
+      // },
+  // {
+  //   type: "editor",
+  //   name: "contributing",
+  //   message: "What are contributing sources?",
+  // },
   // {
   //   type: "rawlist", //select 1 from choices
   //   name: "license",
@@ -66,21 +66,21 @@ const questions = [
   //   name: "test",
   //   message: "Add test instructions",
   // },
-  // {
-  //   type: 'index',
-  //   name: 'questions',
-  //   message: 'Type your question',
-  // },
-  //   { 
-  //     type: 'index',
-  //     name: 'github',
-  //     message: 'Enter your github profile',
-  //   },
-  //   {
-  //     type: 'index',
-  //     name: 'email',
-  //     message: 'Enter your email address',
-  //   }
+  {
+    type: "index",
+    name: "questions", 
+    message: "Type your question",
+  },
+    { 
+      type: "index",
+      name: "github",
+      message: "Enter your github profile",
+    },
+    {
+      type: "index",
+      name: "email",
+      message: "Enter your email address",
+    }
  
 ];
 

@@ -47,14 +47,17 @@ by ${data.name} ${renderLicenseBadge(data.license)}
   * [Questions](#questions)
      
   ## Installation 
-  ${data.install}
+  ${data.installation}
 
-    * User Story
+  * User Story -
+    ${data.userStory}
 
-    * Acceptance Criteria
-  
-    * Wireframe
-  
+  * Acceptance Criteria -
+    ${data.acceptanceCriteria}
+
+  * Wireframe -
+    ${data.wireframe}
+
   ## Usage 
   ${data.usage}
   
@@ -74,10 +77,10 @@ by ${data.name} ${renderLicenseBadge(data.license)}
   ${data.test}
 
   ## Questions
-  ${data.questions},
+  ${data.questions}
 
   * Github -
-    ${data.github},
+    ${data.github}
 
   * Email -
     ${data.email}
