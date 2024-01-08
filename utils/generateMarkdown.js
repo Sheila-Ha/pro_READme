@@ -10,7 +10,7 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
+function renderLicenseLink(license) Sheila Hanson {
   if (license !== "none") {
     return `/n* [License](#license)\n`;
   }
@@ -38,9 +38,6 @@ by ${data.name} ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
   * [Installation](#installation)
-    * [UserStory](#userStory)
-    * [AcceptanceCriteria](#acceptanceCriteria)
-    * [Wireframe](#wireframe)
   * [Usage](#usage)
   * [Features](#features)
   * [Contributing](#contributing)
@@ -80,6 +77,7 @@ by ${data.name} ${renderLicenseBadge(data.license)}
   ${data.test}
 
   ## Questions
+  <img src="${userInfo.avatar_url}" alt="${userInfo.login}" width="40%" />
   ${data.questions}
 
   * Github -
