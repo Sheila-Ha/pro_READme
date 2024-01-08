@@ -8,17 +8,18 @@ const questions = [
   {
     type: "input", // used for single line responses
     name: "title", //name of configuration
-    message: "What is the title of your project?" //question prompt in console.log
+    message: "What is the title of your project?", //question prompt in console.log
   },
-  //   type: "input",
-  //   name: "Name",
-  //   message: "Author name",
-  // },
-  // {
-  //   type: "editor", //used for multi line responses, saved in notepad
-  //   name: "description",
-  //   message: "Describe your project, the purpose and how it functions."
-  // },
+  {
+    type: "input",
+    name: "Name",
+    message: "Author name",
+  },
+  {
+    type: "editor", //used for multi line responses, saved in notepad
+    name: "description",
+    message: "Describe your project, the purpose and how it functions.",
+  },
   {
     type: "editor",
     name: "installation",
