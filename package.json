@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "font-awesome": "^4.7.0",
     "inquirer": "^8.2.4"
   }
 }
