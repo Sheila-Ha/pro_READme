@@ -53,14 +53,14 @@ ${data.description}
 ## Installation 
 ${data.installation}
 
-* User Story
-  ${data.userStory}
+  #### User Story
+    ${data.userStory}
 
-* Acceptance Criteria
-  ${data.acceptanceCriteria}
+  #### Acceptance Criteria
+    ${data.acceptanceCriteria}
 
-* Wireframe
-  ${data.wireframe}
+  #### Wireframe
+    ${data.wireframe}
 
 ## Usage 
 ${data.usage}
