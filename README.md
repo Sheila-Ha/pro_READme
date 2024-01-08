@@ -1,1 +1,1 @@
-README being built.
+README is being built.
