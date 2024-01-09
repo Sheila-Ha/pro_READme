@@ -60,7 +60,7 @@ ${data.installation}
   #### Acceptance Criteria
     ${data.acceptanceCriteria}
 
-  #### Wireframe -
+  #### Wireframe
     ${data.wireframe}
 
 ## Usage 
