@@ -12,7 +12,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "Name",
+    name: "name",
     message: "Author name",
   },
   {
@@ -61,11 +61,11 @@ const questions = [
     message: "Select a license for your project",
     choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD3", "GNU3", "none"],
   },
-  {
-    type: "editor",
-    name: "badges",
-    message: "What badges apply?",
-  },
+  // {
+  //   type: "editor",
+  //   name: "badges",
+  //   message: "What badges apply?",
+  // },
   {
     type: "editor",
     name: "test",

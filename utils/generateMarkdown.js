@@ -34,6 +34,8 @@ function generateMarkdown(data) {
     return `# ${data.title}
 by ${data.name} ${renderLicenseBadge(data.license)}
 
+${data.badges}
+
 ## Description 
 ${data.description}
 
@@ -46,7 +48,6 @@ ${data.description}
 * [Features](#features)
 * [Contributing](#contributing)
 * [License](#license)
-* [Badges](#badges)
 * [Tests](#tests)
 * [Questions](#questions)
     
@@ -59,7 +60,7 @@ ${data.installation}
   #### Acceptance Criteria
     ${data.acceptanceCriteria}
 
-  #### Wireframe
+  #### Wireframe -
     ${data.wireframe}
 
 ## Usage 
@@ -73,9 +74,6 @@ ${data.contributing}
 
 ## License 
 This project is licensed under ${data.license}
-
-## Badges
-${data.badges}
 
 ## Tests
 ${data.test}
