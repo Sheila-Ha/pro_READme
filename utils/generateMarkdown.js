@@ -162,7 +162,7 @@ ${data.description}
 * [Features](#features)
 * [Contributing](#contributing)
 * [License](#license)
-${testTOC}
+${testingTOC}
 ${questionsTOC}
     
 ${installationContent}
@@ -181,7 +181,7 @@ ${data.contributing}
 ## License 
 This project is licensed under ${data.license}
 
-${testContent}
+${testingContent}
 ${questionsContent}
 * Github -
 [${data.github}](${data.github})
