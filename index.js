@@ -15,16 +15,16 @@ const questions = [
     name: "name",
     message: "Author name",
   },
-  // {
-  //   type: "editor", //used for multi line responses, saved in notepad
-  //   name: "description",
-  //   message: "Describe your project, the purpose and how it functions.",
-  // },
-  // {
-  //   type: "editor",
-  //   name: "installation",
-  //   message: "Add installation instructions",
-  // },
+  {
+    type: "editor", //used for multi line responses, saved in notepad
+    name: "description",
+    message: "Describe your project, the purpose and how it functions.",
+  },
+  {
+    type: "editor",
+    name: "installation",
+    message: "Add installation instructions",
+  },
   {
     type: "editor",
     name: "userStory",

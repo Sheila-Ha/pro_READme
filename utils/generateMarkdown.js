@@ -33,6 +33,24 @@ function generateMarkdown(data) {
   try {
     // Variables to add table of contents items and content IF the user has entered data
     
+    // Installation in Table of Contents
+    let installationTOC = ``;
+    // If the variable length is greater than 0, display text
+    if(data.installation.length > 0) { 
+      installationTOC = `
+* [Installation](#installation)
+    `;
+    }
+    // Installation content
+    let installationContent = ``;
+    // If the variable length is greater than 0, display text
+    if(data.installation.length > 0) {
+      installationContent = `
+## Installation
+${data.installation}
+    `;
+    }
+
     // User Story in Table of Contents
     let userStoryTOC = ``;
     // If the variable length is greater than 0, display text
@@ -50,6 +68,7 @@ function generateMarkdown(data) {
   ${data.userStory}
     `;
     }
+
     // Acceptance Criteria in Table of Contents
     let acceptanceCriteriaTOC = ``;
     // If the variable length is greater than 0, display text
@@ -91,7 +110,7 @@ function generateMarkdown(data) {
     // If the variable length is greater than 0, display text
     if(data.test.length > 0) { 
       testTOC = `
-* [Test](#test)
+* [Testing](#testing)
     `;
     }
     // Test content
@@ -99,8 +118,8 @@ function generateMarkdown(data) {
     // If the variable length is greater than 0, display text
     if(data.test.length > 0) {
       testContent = `
-  ### Test
-  ${data.test}
+## Testing
+${data.test}
     `;
     }
     
@@ -117,12 +136,14 @@ function generateMarkdown(data) {
     // If the variable length is greater than 0, display text
     if(data.questions.length > 0) {
       questionsContent = `
-  ### Questions
-  ${data.questions}
+## Questions
+${data.questions}
     `;
     }
     
     // Use the variables above in the returned string
+    // $ data. = is user input
+    // $ w/o date. = optional input
     return `# ${data.title}
 by ${data.name} ${renderLicenseBadge(data.license)}
 
@@ -132,7 +153,7 @@ ${data.badges}
 ${data.description}
 
 ## Table of Contents
-* [Installation](#installation)
+  ${installationTOC}
   ${userStoryTOC}
   ${acceptanceCriteriaTOC}
   ${wireframeTOC}
@@ -144,12 +165,9 @@ ${data.description}
 ${testTOC}
 ${questionsTOC}
     
-## Installation 
-${data.installation}
+${installationContent}
   ${userStoryContent}
-  ### Acceptance Criteria
-  ${data.acceptanceCriteria}
-
+  ${acceptanceCriteriaContent}
   ${wireframeContent}
 ## Usage 
 ${data.usage}
@@ -163,12 +181,8 @@ ${data.contributing}
 ## License 
 This project is licensed under ${data.license}
 
-## Tests
-${data.test}
-
-## Questions
-${data.questions}
-
+${testContent}
+${questionsContent}
 * Github -
 [${data.github}](${data.github})
 
