@@ -27,11 +27,11 @@ function renderLicenseSection(license) {
   }
   return "";
 }
-
+//tabs/spacing matter for the output because it effects how the md file interprets content
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   try {
-    return `# ${data.title}
+    let result = `# ${data.title}
 by ${data.name} ${renderLicenseBadge(data.license)}
 
 ${data.badges}
@@ -40,10 +40,16 @@ ${data.badges}
 ${data.description}
 
 ## Table of Contents
-* [Installation](#installation)
+* [Installation](#*installation*)
   * [User Story](#user-story)
   * [Acceptance Criteria](#acceptance-criteria)
+`;
+if(data.wireframe.length > 0) { 
+  result += `
   * [Wireframe](#wireframe)
+`;
+}
+result += `
 * [Usage](#usage)
 * [Features](#features)
 * [Contributing](#contributing)
@@ -54,15 +60,19 @@ ${data.description}
 ## Installation 
 ${data.installation}
 
-  #### User Story
-    ${data.userStory}
+  ### User Story
+  ${data.userStory}
 
-  #### Acceptance Criteria
-    ${data.acceptanceCriteria}
-
-  #### Wireframe
-    ${data.wireframe}
-
+  ### Acceptance Criteria
+  ${data.acceptanceCriteria}
+`; 
+if(data.wireframe.length > 0) {
+  result += `
+  ### Wireframe
+  [My Wireframe](${data.wireframe})
+`;
+}
+result += `
 ## Usage 
 ${data.usage}
 
@@ -82,11 +92,12 @@ ${data.test}
 ${data.questions}
 
 * Github -
-  ${data.github}
+[${data.github}](${data.github})
 
 * Email -
-  ${data.email}
-`;    
+${data.email}
+`;
+    return result;    
   } catch (error) {
     console.log(error);
   }

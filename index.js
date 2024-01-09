@@ -15,67 +15,67 @@ const questions = [
     name: "name",
     message: "Author name",
   },
-  {
-    type: "editor", //used for multi line responses, saved in notepad
-    name: "description",
-    message: "Describe your project, the purpose and how it functions.",
-  },
-  {
-    type: "editor",
-    name: "installation",
-    message: "Add installation instructions",
-  },
-  {
-    type: "editor",
-    name: "userStory",
-    message: "Add your user story",
-  },
-  {
-    type: "editor",
-    name: "acceptanceCriteria",
-    message: "Add your acceptance criteria",
-  },
+  // {
+  //   type: "editor", //used for multi line responses, saved in notepad
+  //   name: "description",
+  //   message: "Describe your project, the purpose and how it functions.",
+  // },
+  // {
+  //   type: "editor",
+  //   name: "installation",
+  //   message: "Add installation instructions",
+  // },
+  // {
+  //   type: "editor",
+  //   name: "userStory",
+  //   message: "Add your user story",
+  // },
+  // {
+  //   type: "editor",
+  //   name: "acceptanceCriteria",
+  //   message: "Add your acceptance criteria",
+  // },
   {
     type: "index",
     name: "wireframe",
     message: "Add your wireframe link",
   },
-  {
-    type: "editor",
-    name: "usage",
-    message: "How do you use your application?",
-  },
-  {
-    type: "editor",
-    name: "features",
-    message: "What does your project feature?",
-  },
-  {
-    type: "editor",
-    name: "contributing",
-    message: "What are contributing sources?",
-  },
-  {
-    type: "rawlist", //select 1 from choices
-    name: "license",
-    message: "Select a license for your project",
-    choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD3", "GNU3", "none"],
-  },
   // {
   //   type: "editor",
-  //   name: "badges",
-  //   message: "What badges apply?",
+  //   name: "usage",
+  //   message: "How do you use your application?",
   // },
-  {
-    type: "editor",
-    name: "test",
-    message: "Add test instructions",
-  },
-  {
-    type: "index",
-    name: "questions", 
-    message: "Type your question",
-  },
+  // {
+  //   type: "editor",
+  //   name: "features",
+  //   message: "What does your project feature?",
+  // },
+  // {
+  //   type: "editor",
+  //   name: "contributing",
+  //   message: "What are contributing sources?",
+  // },
+  // {
+  //   type: "rawlist", //select 1 from choices
+  //   name: "license",
+  //   message: "Select a license for your project",
+  //   choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD3", "GNU3", "none"],
+  // },
+  // // {
+  // //   type: "editor",
+  // //   name: "badges",
+  // //   message: "What badges apply?",
+  // // },
+  // {
+  //   type: "editor",
+  //   name: "test",
+  //   message: "Add test instructions",
+  // },
+  // {
+  //   type: "index",
+  //   name: "questions", 
+  //   message: "Type your question",
+  // },
   { 
     type: "index",
     name: "github",
