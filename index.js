@@ -30,11 +30,11 @@ const questions = [
     name: "userStory",
     message: "Add your user story",
   },
-  // {
-  //   type: "editor",
-  //   name: "acceptanceCriteria",
-  //   message: "Add your acceptance criteria",
-  // },
+  {
+    type: "editor",
+    name: "acceptanceCriteria",
+    message: "Add your acceptance criteria",
+  },
   {
     type: "index",
     name: "wireframe",
@@ -66,16 +66,16 @@ const questions = [
   // //   name: "badges",
   // //   message: "What badges apply?",
   // // },
-  // {
-  //   type: "editor",
-  //   name: "test",
-  //   message: "Add test instructions",
-  // },
-  // {
-  //   type: "index",
-  //   name: "questions", 
-  //   message: "Type your question",
-  // },
+  {
+    type: "editor",
+    name: "test",
+    message: "Add test instructions",
+  },
+  {
+    type: "index",
+    name: "questions", 
+    message: "Type your question",
+  },
   { 
     type: "index",
     name: "github",

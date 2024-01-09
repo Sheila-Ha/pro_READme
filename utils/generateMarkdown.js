@@ -32,23 +32,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   try {
     // Variables to add table of contents items and content IF the user has entered data
-    // Wireframe in Table of Contents
-    let wireframeTOC = ``;
-    // If the variable length is greater than 0, display text
-    if(data.wireframe.length > 0) { 
-      wireframeTOC = `
-  * [Wireframe](#wireframe)
-      `;
-    }
-    // Wireframe content
-    let wireframeContent = ``;
-    // If the variable length is greater than 0, display text
-    if(data.wireframe.length > 0) { 
-      wireframeContent = `
-  ### Wireframe
-  [My Wireframe](${data.wireframe})
-      `;
-    }
+    
     // User Story in Table of Contents
     let userStoryTOC = ``;
     // If the variable length is greater than 0, display text
@@ -66,6 +50,78 @@ function generateMarkdown(data) {
   ${data.userStory}
     `;
     }
+    // Acceptance Criteria in Table of Contents
+    let acceptanceCriteriaTOC = ``;
+    // If the variable length is greater than 0, display text
+    if(data.acceptanceCriteria.length > 0) { 
+      acceptanceCriteriaTOC = `
+  * [Acceptance Criteria](#acceptance-criteria)
+    `;
+    }
+    // Acceptance Criteria content
+    let acceptanceCriteriaContent = ``;
+    // If the variable length is greater than 0, display text
+    if(data.acceptanceCriteria.length > 0) {
+      acceptanceCriteriaContent = `
+  ### Acceptance Criteria
+  ${data.acceptanceCriteria}
+    `;
+    }
+        
+    // Wireframe in Table of Contents
+    let wireframeTOC = ``;
+    // If the variable length is greater than 0, display text
+    if(data.wireframe.length > 0) { 
+      wireframeTOC = `
+  * [Wireframe](#wireframe)
+      `;
+    }
+    // Wireframe content
+    let wireframeContent = ``;
+    // If the variable length is greater than 0, display text
+    if(data.wireframe.length > 0) { 
+      wireframeContent = `
+  ### Wireframe
+  [My Wireframe](${data.wireframe})
+      `;
+    }
+   
+    // Test in Table of Contents
+    let testTOC = ``;
+    // If the variable length is greater than 0, display text
+    if(data.test.length > 0) { 
+      testTOC = `
+* [Test](#test)
+    `;
+    }
+    // Test content
+    let testContent = ``;
+    // If the variable length is greater than 0, display text
+    if(data.test.length > 0) {
+      testContent = `
+  ### Test
+  ${data.test}
+    `;
+    }
+    
+    // Questions in Table of Contents
+    let questionsTOC = ``;
+    // If the variable length is greater than 0, display text
+    if(data.questions.length > 0) { 
+      questionsTOC = `
+* [Questions](#questions)
+    `;
+    }
+    // Question content
+    let questionsContent = ``;
+    // If the variable length is greater than 0, display text
+    if(data.questions.length > 0) {
+      questionsContent = `
+  ### Questions
+  ${data.questions}
+    `;
+    }
+    
     // Use the variables above in the returned string
     return `# ${data.title}
 by ${data.name} ${renderLicenseBadge(data.license)}
@@ -76,17 +132,17 @@ ${data.badges}
 ${data.description}
 
 ## Table of Contents
-* [Installation](#*installation*)
+* [Installation](#installation)
   ${userStoryTOC}
-  * [Acceptance Criteria](#acceptance-criteria)
+  ${acceptanceCriteriaTOC}
   ${wireframeTOC}
 
 * [Usage](#usage)
 * [Features](#features)
 * [Contributing](#contributing)
 * [License](#license)
-* [Tests](#tests)
-* [Questions](#questions)
+${testTOC}
+${questionsTOC}
     
 ## Installation 
 ${data.installation}
