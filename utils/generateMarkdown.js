@@ -31,7 +31,43 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   try {
-    let result = `# ${data.title}
+    // Variables to add table of contents items and content IF the user has entered data
+    // Wireframe in Table of Contents
+    let wireframeTOC = ``;
+    // If the variable length is greater than 0, display text
+    if(data.wireframe.length > 0) { 
+      wireframeTOC = `
+  * [Wireframe](#wireframe)
+      `;
+    }
+    // Wireframe content
+    let wireframeContent = ``;
+    // If the variable length is greater than 0, display text
+    if(data.wireframe.length > 0) { 
+      wireframeContent = `
+  ### Wireframe
+  [My Wireframe](${data.wireframe})
+      `;
+    }
+    // User Story in Table of Contents
+    let userStoryTOC = ``;
+    // If the variable length is greater than 0, display text
+    if(data.userStory.length > 0) { 
+      userStoryTOC = `
+  * [User Story](#user-story)
+    `;
+    }
+    // User Story content
+    let userStoryContent = ``;
+    // If the variable length is greater than 0, display text
+    if(data.userStory.length > 0) {
+      userStoryContent = `
+  ### User Story
+  ${data.userStory}
+    `;
+    }
+    // Use the variables above in the returned string
+    return `# ${data.title}
 by ${data.name} ${renderLicenseBadge(data.license)}
 
 ${data.badges}
@@ -41,15 +77,10 @@ ${data.description}
 
 ## Table of Contents
 * [Installation](#*installation*)
-  * [User Story](#user-story)
+  ${userStoryTOC}
   * [Acceptance Criteria](#acceptance-criteria)
-`;
-if(data.wireframe.length > 0) { 
-  result += `
-  * [Wireframe](#wireframe)
-`;
-}
-result += `
+  ${wireframeTOC}
+
 * [Usage](#usage)
 * [Features](#features)
 * [Contributing](#contributing)
@@ -59,20 +90,11 @@ result += `
     
 ## Installation 
 ${data.installation}
-
-  ### User Story
-  ${data.userStory}
-
+  ${userStoryContent}
   ### Acceptance Criteria
   ${data.acceptanceCriteria}
-`; 
-if(data.wireframe.length > 0) {
-  result += `
-  ### Wireframe
-  [My Wireframe](${data.wireframe})
-`;
-}
-result += `
+
+  ${wireframeContent}
 ## Usage 
 ${data.usage}
 
@@ -97,7 +119,6 @@ ${data.questions}
 * Email -
 ${data.email}
 `;
-    return result;    
   } catch (error) {
     console.log(error);
   }

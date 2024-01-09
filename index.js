@@ -25,11 +25,11 @@ const questions = [
   //   name: "installation",
   //   message: "Add installation instructions",
   // },
-  // {
-  //   type: "editor",
-  //   name: "userStory",
-  //   message: "Add your user story",
-  // },
+  {
+    type: "editor",
+    name: "userStory",
+    message: "Add your user story",
+  },
   // {
   //   type: "editor",
   //   name: "acceptanceCriteria",
