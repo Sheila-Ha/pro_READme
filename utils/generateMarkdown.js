@@ -105,21 +105,21 @@ ${data.installation}
       `;
     }
    
-    // Test in Table of Contents
-    let testTOC = ``;
+    // Testing in Table of Contents
+    let testingTOC = ``;
     // If the variable length is greater than 0, display text
-    if(data.test.length > 0) { 
-      testTOC = `
+    if(data.testing.length > 0) { 
+      testingTOC = `
 * [Testing](#testing)
     `;
     }
     // Test content
-    let testContent = ``;
+    let testingContent = ``;
     // If the variable length is greater than 0, display text
-    if(data.test.length > 0) {
-      testContent = `
+    if(data.testing.length > 0) {
+      testingontent = `
 ## Testing
-${data.test}
+${data.testing}
     `;
     }
     
