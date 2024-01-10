@@ -68,11 +68,6 @@ const questions = [
   },
   {
     type: "editor",
-    name: "badges",
-    message: "What badges apply?",
-  },
-  {
-    type: "editor",
     name: "testing",
     message: "Add testing instructions",
   },
@@ -90,8 +85,12 @@ const questions = [
     type: "index",
     name: "email",
     message: "Enter your email address",
+  },
+  {
+    type: "editor",
+    name: "badges",
+    message: "What badges apply?",
   }
- 
 ];
 
 // TODO: Create a function to write README file

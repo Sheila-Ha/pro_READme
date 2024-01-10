@@ -140,14 +140,31 @@ ${data.testing}
 ${data.questions}
     `;
     }
+
+    // Badges in Table of Contents
+    let badgesTOC = ``;
+    // If the variable length is greater than 0, display text
+    if(data.badges.length > 0) { 
+      badgesTOC = `
+* [Badges](#badges)
+    `;
+    }
+    // Question content
+    let badgesContent = ``;
+    // If the variable length is greater than 0, display text
+    if(data.badges.length > 0) {
+      badgesContent = `
+## Badges
+${data.badges}
+    `;
+    }
+    
     
     // Use the variables above in the returned string
     // $ data. = is user input
     // $ w/o date. = optional input
     return `# ${data.title} <!-- omit from toc -->
 by ${data.name} ${renderLicenseBadge(data.license)}
-
-${data.badges}
 
 ## Description <!-- omit from toc -->
 ${data.description}
@@ -192,6 +209,9 @@ ${questionsContent}
 
 * Email -
 ${data.email}
+
+## Badges
+${data.badges}
 `;
   } catch (error) {
     console.log(error);

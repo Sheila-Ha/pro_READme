@@ -26,8 +26,8 @@ The function is invoked through command "node index.js" and the user responds to
 Use your terminal to install packages/dependencies. 
 
 Install Node and inquirer:
-  * Install [Node.js](www.something.com)  
-  * Install [inquirer](www.something.com)
+  * Install [Node.js](https://nodejs.org/en))  
+  * Install [inquirer](https://www.npmjs.com/package/inquirer/v/8.2.4))
     * Input into your terminal:  
       * npm i inquirer@8.2.4
   * Install all other dependencies:
