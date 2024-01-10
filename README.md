@@ -69,6 +69,8 @@ To invoke prompts:
    
 Upon completion, you will find your README.md file in the dist folder.
 
+![Alt text](utils/node_index.js_questions.png)
+
 ## Features
 The two additional features I have added to this project are:  
 1. Omitting sections you might not need to include  
