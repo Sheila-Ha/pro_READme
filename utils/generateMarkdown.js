@@ -144,15 +144,15 @@ ${data.questions}
     // Use the variables above in the returned string
     // $ data. = is user input
     // $ w/o date. = optional input
-    return `# ${data.title}
+    return `# ${data.title} <!-- omit from toc -->
 by ${data.name} ${renderLicenseBadge(data.license)}
 
 ${data.badges}
 
-## Description 
+## Description <!-- omit from toc -->
 ${data.description}
 
-## Table of Contents
+## Table of Contents <!-- omit from toc -->
   ${installationTOC}
   ${userStoryTOC}
   ${acceptanceCriteriaTOC}
