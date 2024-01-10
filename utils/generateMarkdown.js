@@ -160,10 +160,11 @@ ${data.description}
 
 * [Usage](#usage)
 * [Features](#features)
+* [Challenges](#challenges)
 * [Contributing](#contributing)
 * [License](#license)
 ${testingTOC}
-${questionsTOC}
+* [Questions](#questions)
     
 ${installationContent}
   ${userStoryContent}
@@ -174,6 +175,9 @@ ${data.usage}
 
 ## Features
 ${data.features}
+
+## Challenges
+${data.challenges}
 
 ## Contributing
 ${data.contributing}

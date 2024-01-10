@@ -52,6 +52,11 @@ const questions = [
   },
   {
     type: "editor",
+    name: "challenges",
+    message: "What were your challenges?",
+  },
+  {
+    type: "editor",
     name: "contributing",
     message: "What are contributing sources?",
   },
