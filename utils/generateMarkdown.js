@@ -181,7 +181,7 @@ ${data.description}
 * [Contributing](#contributing)
 * [License](#license)
 ${testingTOC}
-* [Questions](#questions)
+${questionsTOC}
     
 ${installationContent}
   ${userStoryContent}
