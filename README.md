@@ -68,9 +68,11 @@ To invoke prompts:
      2. Type your answer, save and exit the text editor  
         a. the terminal will display "Received"
    
-Upon completion, you will find your README.md file in the dist folder.
+Upon completion, you will find your README.md file in the dist folder.    
 
-![Alt text](utils/node_index.js_questions.png)
+   ![Screenshot](utils/node_index.js_questions.png)
+
+  DEMO: (https://app.screencast.com/WRS5VXEDMRTUp?tab=Details&conversation=pHgt5GOHY5NK8V0lPB0xGQ)
 
 ## Features
 The two additional features I have added to this project are:  
@@ -90,7 +92,7 @@ I wanted to create a README.md that included more sections and functions than wh
 [npm](https://www.npmjs.com/package/inquirer/v/8.2.4?activeTab=readme#installation)  
 [mdn web docs](https://developer.mozilla.org/en-US/docs/Web)  
 [node.js](https://nodejs.org/docs/latest/api/)  
-[stack overflow](https://stackoverflow.com/newreg=67d94556b887449fa2885dadf54a5439)  
+[stack overflow](https://stackoverflow.com/?newreg=67d94556b887449fa2885dadf54a5439)  
 [tldraw](https://www.tldraw.com/)
 
 ## License 
