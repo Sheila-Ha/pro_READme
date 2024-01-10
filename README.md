@@ -1,8 +1,5 @@
 # README.md Generator <!-- omit from toc -->
-by Sheila Hanson ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)  
-
-
-
+by Sheila Hanson ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description <!-- omit from toc -->
 This is a command-line application using inquirer that dynamically generates a professional README.md file from the user's input.  
@@ -14,40 +11,31 @@ The function is invoked through command "node index.js" and the user responds to
 - [Installation](#installation)
   - [User Story](#user-story)
   - [Acceptance Criteria](#acceptance-criteria)
+  - [Wireframe](#wireframe)
 - [Usage](#usage)
 - [Features](#features)
 - [Challenges](#challenges)
 - [Contributing](#contributing)
 - [License](#license)
+- [Testing](#testing)
 - [Questions](#questions)
+- [Badges](#badges)
     
 
 ## Installation
-Use your terminal to install packages/dependencies. 
-
-Install Node and inquirer:
-  * Install [Node.js](https://nodejs.org/en))  
-  * Install [inquirer](https://www.npmjs.com/package/inquirer/v/8.2.4))
-    * Input into your terminal:  
-      * npm i inquirer@8.2.4
-  * Install all other dependencies:
-    * Input into your terminal:
-      * npm install  
-  
-Running your project:  
-  * Input into your terminal:  
-    * node index.js
-
+This is a command-line application using inquirer that dynamically generates a professional README.md file from the user's input.  
+When using this application it is going to allow the user to devote more time to working on the project.  
+The function is invoked through command "node index.js" and the user responds to prompts. Upon finishing the prompts a README.md file is generated.
     
   
-### User Story  
-AS A developer  
+  ### User Story
+  AS A developer  
 I WANT a README generator  
 SO THAT I can quickly create a professional README for a new project
     
   
-### Acceptance Criteria
-GIVEN a command-line application that accepts user input  
+  ### Acceptance Criteria
+  GIVEN a command-line application that accepts user input  
 WHEN I am prompted for information about my application repository  
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions  
 WHEN I enter my project title  
@@ -62,8 +50,12 @@ WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions  
 WHEN I click on the links in the Table of Contents  
 THEN I am taken to the corresponding section of the README
+
     
   
+  ### Wireframe
+  [My Wireframe](https://www.tldraw.com/s/v2_c__lagYWx6ZQ18_LJdiOUzM?viewport=0%2C-40%2C1536%2C695&page=page%3Apage)
+      
 ## Usage 
 To invoke prompts:  
 1. Input into command line: node index.js  
@@ -80,7 +72,8 @@ Upon completion, you will find your README.md file in the dist folder.
 ## Features
 The two additional features I have added to this project are:  
 1. Omitting sections you might not need to include  
-2. Having multiline responses using a text editor
+2. Having multiline responses using a text editor  
+3. Including a wireframe
 
 ## Challenges
 I wanted to create a README.md that included more sections and functions than what was required:
@@ -101,12 +94,25 @@ I wanted to create a README.md that included more sections and functions than wh
 This project is licensed under MIT
 
 
+## Testing
+Testing your README.md  
+1. complete all the prompts  
+2. verify your responses we generated into README.md file  
+3. verify all links are redirecting to outside source or directing you within README.md
+
+    
 
 ## Questions
 If you have any questions, or additional feedback, please feel free to email me and I will respond as soon as possible.
     
 * Github -
-https://github.com/Sheila-Ha/pro_READme
+[https://github.com/Sheila-Ha/pro_READme](https://github.com/Sheila-Ha/pro_READme)
 
 * Email -
 slhanson11@live.com
+
+## Badges
+![MDN Web Docs](https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white)  ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)  ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)  ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
+![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)  ![Lenovo](https://img.shields.io/badge/lenovo-E2231A?style=for-the-badge&logo=lenovo&logoColor=white)
