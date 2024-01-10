@@ -61,11 +61,12 @@ To invoke prompts:
 1. Input into command line: node index.js  
 2. Two options to respond to prompts:  
    a. Press the "Enter" key without adding any characters into the field (will be omitted from README.md)  
-   b. Type your answer and press the "Enter" key  
+   b. Type your answer and press the "Enter" key
    
     IF you are redirected to a text editor, your two options are:  
      1. Exit the text editor (will be omitted from README.md)  
      2. Type your answer, save and exit the text editor  
+        a. the terminal will display "Received"
    
 Upon completion, you will find your README.md file in the dist folder.
 

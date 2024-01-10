@@ -110,7 +110,7 @@ ${data.installation}
     // If the variable length is greater than 0, display text
     if(data.testing.length > 0) { 
       testingTOC = `
-  * [Testing](#testing)
+* [Testing](#testing)
     `;
     }
     // Test content
